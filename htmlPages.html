@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom - Upload Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Classroom</h1>
+        <h2>Upload and View Notes</h2>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h3>Upload Notes</h3>
+            <form id="upload-form">
+                <label for="note-title">Note Title:</label>
+                <input type="text" id="note-title" name="note-title" required>
+
+                <label for="note-content">Note Content:</label>
+                <textarea id="note-content" name="note-content" rows="5" required></textarea>
+
+                <label for="note-file">Upload File:</label>
+                <input type="file" id="note-file" name="note-file">
+
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section id="notes-section">
+            <h3>Uploaded Notes</h3>
+            <ul id="notes-list">
+                <!-- Uploaded notes will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
